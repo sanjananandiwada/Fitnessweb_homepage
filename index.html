@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sans Fitness</title>
+    <link rel="shortcut icon" href="img/logo.avif" type="image/x-icon">
+</head>
+<link rel="stylesheet" href="css/styles.css">
+<style>
+    body{
+     margin: 0px;
+    padding: 0px;
+    background: url('img/bg3.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: beige;
+    font-family:'Baloo Bhai', cursive;
+}
+.left{
+    /*border:2px solid rgb(17, 255, 0);*/
+    display: inline-block;
+    left:34px;
+    top:20px;
+    position: absolute;
+    text-align: center;
+}
+.left img{
+    width:50px;
+    border-radius: 10px;
+}
+.mid{
+    /*border:3px solid rgb(86, 86, 86);*/
+    display: block;
+    width:40% ;
+    margin: 40px auto;
+}
+.right{
+    /*border:2px solid rgb(0, 42, 255);*/
+    display: inline-block;
+    position: absolute;
+    right: 34px;
+    top:20px;
+    
+}
+.navbar{
+    display: inline-block;
+    overflow: hidden;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 25px;
+    list-style-type: none;
+}
+.navbar a{
+    text-decoration: none;
+    color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 10px;
+}
+.navbar a.active{
+    background-color: #195e45;
+  color: white;
+  border-radius: 10px;
+}
+.btn{
+    margin:0px 9px;
+    color:white;
+    background-color: black;
+    padding : 4px 14px;
+    border: 2px solid gray;
+    font-size: 15px;
+border-radius: 10px;
+cursor: pointer;
+font-family: 'Baloo Bhai', cursive;
+}
+.btn:hover{
+    background-color: #ddd;
+    color: black;
+}
+.container
+{
+    border: 2px solid white;
+    margin: 106px 80px;
+    padding: 50px;
+    width:33%;
+    border-radius: 20px;
+}
+.form-group input{
+    text-align: center;
+    display: block;
+    width: 400px;
+    padding: 4px;
+    border:5px solid black;
+    margin: auto;
+    border-radius: 15px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container h1{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+.container h2{
+    color: #df3b09;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 33px;
+}
+.container button{
+    display: block;
+    width: 23%;
+    margin:10px auto;
+    width: 400px;
+}
+
+</style>
+<body>
+    
+   <header class="header">
+    <!--left box for logo-->
+    <div class="left">
+        <img src="img/logo.avif" alt="">
+        <div>
+            Sans Fitness
+        </div>
+
+    </div>
+    <!--mid box for nav bar-->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a class="active" href="#"> Home</a></li>
+            <li><a href="#"> About Us</a></li>
+            <li><a href="#"> Fitness Calculator</a></li>
+            <li><a href="#"> Contact Us</a></li>
+        </ul>
+
+    </div>
+    <!--right box for buttons-->
+    <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+
+    </div>
+   </header>
+   <div class="container">
+    <h1>
+        Join the best gym in Hyderabad 
+    </h1>
+    <h2>NOW!</h2>
+    <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Locality">
+        </div>
+        <button class="btn">Submit</button>
+    </form>
+   </div>
+</body>
+</html>
